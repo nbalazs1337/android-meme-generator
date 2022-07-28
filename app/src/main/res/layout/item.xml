@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="370dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="400dp"
+        android:layout_height="360dp"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="304dp"
+                android:layout_height="205dp"
+                android:src="@mipmap/ic_launcher_round"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.502">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/iv_photo"
+
+                android:layout_toRightOf="@+id/iv_photo"
+                android:text="Android"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></TextView>
+
+            <TextView
+                android:id="@+id/tv_widthAndHeight"
+                android:layout_width="294dp"
+                android:layout_height="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+
+                android:layout_toEndOf="@+id/iv_photo"
+                android:layout_toRightOf="@+id/iv_photo"
+                android:text="Android"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.116"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="46dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.951"
+                app:srcCompat="@drawable/ic_like" />
+
+            <ImageView
+                android:id="@+id/iv_dislike"
+                android:layout_width="46dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.951"
+                app:srcCompat="@drawable/ic_dislike" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="46dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.951"
+                app:srcCompat="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/iv_rotate"
+                android:layout_width="46dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+                app:srcCompat="@drawable/ic_rotate_left" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
